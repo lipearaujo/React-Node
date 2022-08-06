@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  background: linear-gradient(to right, #114357, #f29492);
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  width: 600px;
+}
+
+input {
+  width: 90%;
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  outline: 0;
+  font-size: 1.1rem;
+  box-shadow: 3px 3px 3px #000;
+}
+
+.addTasks {
+  width: 65px;
+  height: 45px;
+  border-radius: 10px;
+  font-size: 1rem;
+  text-align: center;
+  line-height: 20px;
+  cursor: pointer;
+  border: 0;
+  box-shadow: 3px 3px 3px rgb(1, 92, 1);
+  background-color: green;
+  margin-left: 10px;
+}
+.addTasks:hover {
+  background-color: rgb(9, 214, 9);
+}
+
+#checkboxInput {
+  width: 15px;
+  height: 15px;
+  margin-left: 10px;
+}
+
+.taskSingle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.boxTasks {
+  width: 80%;
+  max-width: 800px;
+  padding: 30px 50px;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 5px 5px 5px #000;
+}
+
+.boxTasks h1{
+  text-align: center;
+}
+
+.boxTasks p{
+  width: 100%;
+  font-size: 18px;
+  padding: 8px 10px;
+  border-bottom: 1px dotted;
+}
+
+.delete {
+  margin-left: 10px;
+  border: 0;
+  cursor: pointer;
+}
+
+i{
+  font-size: 18px;
+ color: rgb(160, 12, 12);
+}
+
+
+
