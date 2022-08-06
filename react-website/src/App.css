@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+html, body{
+    height: 100%;
+    background-color: #f8f8f8;
+    color: #000;
+}
+
+.dark-mode {
+    background-color: #1f1f1f;
+    color: #fff;
+    transition: background-color 1s;
+}
+
+.light-mode {
+    background-color: #f8f8f8;
+    color: #1f1f1f;
+    transition: background-color 1s;
+}

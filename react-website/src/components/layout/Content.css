@@ -1,0 +1,17 @@
+footer {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer p{
+    letter-spacing: 2px;
+    line-height: 20px;
+    color: rgb(104, 104, 104);
+}
+
+footer span{
+    font-weight: 700;
+}

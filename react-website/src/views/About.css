@@ -1,0 +1,111 @@
+.about { 
+    width: 1280px;
+    height:calc(100vh - 130px);
+    margin: 0 auto;
+}
+
+.cards {
+    display: flex;
+    align-items:flex-start;
+    justify-content: center;
+    margin-top: 30px;
+    height: 450px;
+}
+
+.card-single {
+    margin: 30px;
+    width: 30rem;
+    color: #ffffffda;
+    padding: 1.5rem;
+    background-color: #202022;
+    transform: scale(1);
+    opacity: 1;
+    transition: all 150ms ease-in-out; 
+    border-top: 1px solid #008000;
+    border-left: 1px solid #008000;
+    border-right: 2px solid #008000;
+    border-bottom: 2px solid #008000;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #2F7336;
+} 
+
+.card-single:hover {
+    transform: scale(1.15);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+details {
+    cursor: pointer;
+    transition: height 1s ease;   
+}
+
+details p {
+    margin-top: 30px;
+}
+
+summary {
+    font-size: 24px;
+}
+
+details:not([open])
+{
+    height: 2em;
+}
+
+details[open]
+{
+    height: 20em;
+}
+
+.skills {
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    height: 90%;
+    /* background-color: aqua; */
+}
+
+.skills span {
+    margin-top: 10px;
+}
+
+.i-skills {
+    text-align: center;
+    font-size: 22px;
+
+    padding-right: 10px;
+    
+}
+
+.cv-pdf {
+    margin-top: 200px;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.link-pdf {
+    padding: 20px;
+    border: 1px solid #008000;
+    box-shadow: 5px 5px 5px #2F7336;
+    border-radius: 10px;
+    font-size: 24px;
+    text-decoration: none;
+    background-color: #202022;
+    color: #ffffffda;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 150ms ease-in-out;
+}
+
+.link-pdf:hover {
+    transform: scale(1.15);
+}
+
+.link-pdf i {
+    margin-left: 15px;
+}
+

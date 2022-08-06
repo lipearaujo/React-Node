@@ -1,0 +1,119 @@
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:calc(100vh - 100px);
+}
+
+.perfil-image {
+    width: 40vh;
+    height: 40vh;
+    border-radius: 50%;
+    border: 10px solid #2F7336;
+    margin-right: 2rem;
+}
+
+.perfil-image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.perfil-text .title h1{
+    font-size: 3rem;
+}
+
+.perfil-text .title h2{
+    font-size: 2rem;
+}
+
+.perfil-text .title span{
+    color: #2F7336;
+}
+
+.perfil-infos ul {
+    list-style-type: none;
+    padding: 0.8rem;
+}
+
+.perfil-infos li {
+    font-size: 1.1rem;
+    line-height: 2rem;
+    cursor: default;
+}
+
+.perfil-infos li:hover {
+    transition: all .25s ease;
+}
+.perfil-infos span {
+    margin-right: 1rem;
+    font-size: 1.5rem;
+}
+
+.perfil-socials {
+    font-size: 2.5rem;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.perfil-socials a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.perfil-socials a:hover{
+    color: rgb(167, 166, 166);
+}
+
+.perfil-facebook {
+    background-color: #0268E3;
+    width: 50px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px #000;
+}
+
+.perfil-linkedin {
+    background-color: #0268E3;
+    width: 50px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px #000;
+}
+
+.perfil-instagram { 
+    width: 50px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px #000;
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
+
+.perfil-github{
+    background-color: #1f1f1f;
+    width: 50px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px #000;
+}
+
+.perfil-whatsapp {
+    background-color: #2F7336;
+    width: 50px;
+    height: 50px;
+    line-height: 55px;
+    font-size: 2.5rem;
+    color: #fff;
+    border: 0;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px #000;
+    cursor: pointer;
+}
+
+.perfil-whatsapp:hover {
+    color: rgb(167, 166, 166);
+}
