@@ -1,0 +1,10 @@
+.header {
+    width: 100%;
+    text-align: center;
+}
+
+.notes__title {
+    font-size: 2.5rem;
+    font-family: cursive;
+    color: #fff;
+}

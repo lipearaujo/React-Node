@@ -1,0 +1,26 @@
+.questions {
+    width: 100%;
+    max-width: 600px;
+    padding: 2rem;
+    background-color: #7B68EE;
+    border-radius: 2rem;
+
+}
+
+.questions button {
+    border: 2px solid #fff;
+
+}
+
+.options {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;    
+    color: #000;
+}
+
+.feedback {
+    color: #000;
+}

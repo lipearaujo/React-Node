@@ -1,0 +1,29 @@
+.optionSingle {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;    
+    border: 2px solid #fff;
+    border-radius: 1rem;
+    cursor: pointer;    
+    opacity: 0.8;
+    transition: 0.4s;
+    background-color: #483D8B;
+}
+
+.optionSingle:hover{
+    background-color: #26204d;
+    opacity: 1;
+    font-weight: bold;
+}
+
+.correct {
+    background-color: #0bfc03;
+    font-weight: bold;
+}
+
+.wrong {
+    background-color: #ff0000;
+    font-weight: normal;
+    opacity: 0.4;
+}

@@ -39,8 +39,13 @@ details {
     transition: height 1s ease;   
 }
 
-details p {
+.perfil-text {
     margin-top: 30px;
+}
+
+.perfil-text p {
+    margin-top: 10px;
+    line-height: 22px;
 }
 
 summary {
@@ -54,7 +59,7 @@ details:not([open])
 
 details[open]
 {
-    height: 20em;
+    height: 25em;
 }
 
 .skills {

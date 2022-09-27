@@ -1,0 +1,32 @@
+.categoriesWrap {
+    height: 80vh;
+}
+
+p {
+    font-size: 1.1rem;
+}
+
+.categories {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.categorySingle {
+    width: 100%;
+    max-width: 300px;
+    height: 60px;
+    border-radius: 3rem;
+    cursor: pointer;
+    padding: 10px;
+    background: linear-gradient(90deg, rgba(138, 43, 226, 1)0%, rgba(173, 16, 173, 1)100%);
+}
+
+.categorySingle:hover {
+    background: linear-gradient(90deg, rgba(124, 17, 124, 1)0%, rgba(138, 43, 226, 1)100%);
+}
+
