@@ -1,0 +1,46 @@
+@use '../variables'
+@use '../mixins'
+
+.projects__data
+    border-radius: variables.$card-border-radius
+    width: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-bottom: 30px
+
+    .slideBtn
+        cursor: pointer
+        padding: .6rem
+        height: 50px
+        font-size: 3rem
+        color: #fff
+
+    .projects__single
+        border: 1px solid #333
+        border-radius: variables.$card-border-radius
+        width: 100%
+        height: 300px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        gap: 50px
+        margin: 10px
+
+    .project__active
+        display: none
+
+    h3
+        color: variables.$text-color
+        text-align: center
+
+    .projects__link
+        padding: 1rem 1.2rem
+        color: variables.$text-color
+        background: variables.$gradient
+        text-decoration: none
+        border-radius: 3rem
+
+.all__projects__link
+    text-align: center

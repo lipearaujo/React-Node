@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import Note from "./Note";
 import CreateNote from "./CreateNote";
-import "./css/Note.css";
+import axios from "axios";
 import { v4 as uuid } from "uuid";
+import "./css/Note.css";
 
 const Notes = () => {
   //states
@@ -16,6 +17,9 @@ const Notes = () => {
 
   // add new note to the state array
   const saveHandler = () => {
+    axios.post('http://localhost:5000/insert', {
+      
+    })
     setNotes((prevState) => [
       ...prevState,
       {
