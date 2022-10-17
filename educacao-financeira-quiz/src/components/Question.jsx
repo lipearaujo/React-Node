@@ -55,8 +55,8 @@ const Question = () => {
         <h2>{currentQuestion.questionText}</h2>
 
         <div className="options">
-          {currentQuestion.answers.map((option) => (
-            <>
+          {currentQuestion.answers.map((option, key) => (
+            <div key={key}>
               <Options
                 option={option}
                 key={option}
@@ -72,7 +72,7 @@ const Question = () => {
               >
                 <p className="feedback">{currentQuestion.feedbackText}</p>
               </Dialog>
-            </>
+            </div>
           ))}
         </div>
 

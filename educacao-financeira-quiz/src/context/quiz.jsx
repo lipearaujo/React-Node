@@ -26,9 +26,7 @@ const quizReducer = (state, action) => {
 
       state.questions.forEach((question) => {
         if (question.category === action.payload.category) {
-          console.log(question);
           chosenCategory = question.arrayQuestions;
-          console.log(chosenCategory);
         }
       });
 

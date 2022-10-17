@@ -9,7 +9,7 @@ import "./App.css";
 function App() {
   const [quizState, dispatch] = useContext(QuizContext);
   const [inputName, setInputName] = useState("");
-  const [inputRga, setInputRga] = useState(0);
+  const [inputRga, setInputRga] = useState("");
 
   useEffect(() => {
     dispatch({ type: "REORDER_QUESTIONS" });

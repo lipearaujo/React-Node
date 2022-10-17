@@ -1,28 +1,23 @@
 import React from "react";
-import Axios from "axios";
+import Projects from "../data/data";
 import "react-multi-carousel/lib/styles.css";
 import { BsArrowLeftCircle, BsArrowRightCircle } from "react-icons/bs";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 import "../styles/components/projectscontainer.sass";
 
 const ProjectsContainer = () => {
-  const [projectsList, setProjectsList] = useState([]);
   const [sliderIndex, setSliderIndex] = useState(1);
-
-  useEffect(() => {
-    Axios.get("http://localhost:5000/read").then((response) => {
-      setProjectsList(response.data);
-      //console.log(response.data)
-    });
-  });
+  const [dot, setDot] = useState(1);
 
   const nextSlide = () => {
-    if (sliderIndex !== projectsList.length) {
+    if (sliderIndex !== Projects.length) {
       setSliderIndex(sliderIndex + 1);
+      setDot(dot + 1);
     } else {
-      if (sliderIndex === projectsList.length) {
+      if (sliderIndex === Projects.length) {
         setSliderIndex(1);
+        setDot(1);
       }
     }
   };
@@ -30,8 +25,10 @@ const ProjectsContainer = () => {
   const prevSlide = () => {
     if (sliderIndex !== 1) {
       setSliderIndex(sliderIndex - 1);
+      setDot(dot - 1);
     } else if (sliderIndex === 1) {
-      setSliderIndex(projectsList.length);
+      setSliderIndex(Projects.length);
+      setDot(Projects.length);
     }
   };
 
@@ -43,24 +40,35 @@ const ProjectsContainer = () => {
           <BsArrowLeftCircle />
         </div>
 
-        {projectsList.map((project, key) => (
-          <div
-            className={
-              sliderIndex === key + 1 ? "projects__single" : "project__active"
-            }
-            key={key}
-          >
-            <h3>{project._projectName}</h3>
-            <a
-              className="projects__link"
-              href={project._projectURL}
-            >{`<source code />`}</a>
-          </div>
+        {Projects.map((project, key) => (
+          <>
+            <div
+              className={
+                sliderIndex === key + 1
+                  ? "projects__active"
+                  : "projects__single"
+              }
+              key={key}
+            >
+              <h3>{project.title}</h3>
+              <h4>{project.description}</h4>
+              <a
+                className="projects__link"
+                href={project.url}
+              >{`<source code />`}</a>
+            </div>
+          </>
         ))}
 
         <div onClick={nextSlide} className="slideBtn">
           <BsArrowRightCircle />
         </div>
+      </div>
+
+      <div className="dots">
+        {Projects.map((project, key) => (
+          <div className={dot === key + 1 ? "dots__active" : "dots__single"} key={key}></div>
+        ))}
       </div>
 
       <div className="all__projects__link">

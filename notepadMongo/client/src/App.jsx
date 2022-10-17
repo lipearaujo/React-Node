@@ -3,7 +3,7 @@ import axios from "axios";
 import "./App.css";
 
 function App() {
-  const [title, setTile] = useState("");
+  const [title, setTitle] = useState("");
   const [author, setAuthor] = useState("");
   const [textContent, setTextContent] = useState("");
   const [newContent, setNewContent] = useState("");
@@ -32,7 +32,7 @@ function App() {
         console.log(err);
       });
 
-    setTile("");
+    setTitle("");
     setAuthor("");
     setTextContent("");
   };

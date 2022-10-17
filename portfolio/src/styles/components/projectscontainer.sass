@@ -7,7 +7,7 @@
     display: flex
     justify-content: center
     align-items: center
-    margin-bottom: 30px
+    margin-bottom: 20px
 
     .slideBtn
         cursor: pointer
@@ -16,7 +16,7 @@
         font-size: 3rem
         color: #fff
 
-    .projects__single
+    .projects__active
         border: 1px solid #333
         border-radius: variables.$card-border-radius
         width: 100%
@@ -26,14 +26,16 @@
         justify-content: center
         align-items: center
         gap: 50px
-        margin: 10px
 
-    .project__active
+    .projects__single
         display: none
 
     h3
         color: variables.$text-color
         text-align: center
+
+    h4
+        color: variables.$text-color
 
     .projects__link
         padding: 1rem 1.2rem
@@ -42,5 +44,25 @@
         text-decoration: none
         border-radius: 3rem
 
+.dots
+    width: 100%
+    display: flex
+    justify-content: center
+    gap: 30px
+    
+.dots__single
+    width: 15px
+    height: 15px
+    border-radius: 50%
+    background-color: white
+    
+
+.dots__active
+    width: 15px
+    height: 15px
+    border-radius: 50%
+    background: variables.$gradient
+
 .all__projects__link
+    margin-top: 40px
     text-align: center

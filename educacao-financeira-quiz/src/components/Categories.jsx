@@ -10,7 +10,7 @@ const Categories = () => {
   const choseCategory = (category) => {
     dispatch({
       type: "CHOSE_CATEGORY",
-      payload: {category},
+      payload: { category },
     });
 
     dispatch({ type: "REORDER_QUESTIONS" });
@@ -18,17 +18,17 @@ const Categories = () => {
 
   return (
     <Card>
-      <h2>Escolha uma categoria</h2>
+      <h2>Escolha uma dificuldade</h2>
       <p className="paragraph">
-        As perguntas serão referentes a categoria escolhida
+        As perguntas serão referentes a dificuldade escolhida
       </p>
 
       <div className="categories">
-        {quizState.questions.map((question) => (
+        {quizState.questions.map((question, key) => (
           <button
             className="categorySingle"
             onClick={() => choseCategory(question.category)}
-            key={question.category}
+            key={key}
           >
             {question.category}
           </button>

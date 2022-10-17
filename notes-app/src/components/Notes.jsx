@@ -17,9 +17,6 @@ const Notes = () => {
 
   // add new note to the state array
   const saveHandler = () => {
-    axios.post('http://localhost:5000/insert', {
-      
-    })
     setNotes((prevState) => [
       ...prevState,
       {
