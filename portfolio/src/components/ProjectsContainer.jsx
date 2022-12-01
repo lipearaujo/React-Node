@@ -67,7 +67,10 @@ const ProjectsContainer = () => {
 
       <div className="dots">
         {Projects.map((project, key) => (
-          <div className={dot === key + 1 ? "dots__active" : "dots__single"} key={key}></div>
+          <div
+            className={dot === key + 1 ? "dots__active" : "dots__single"}
+            key={key}
+          ></div>
         ))}
       </div>
 
@@ -76,7 +79,7 @@ const ProjectsContainer = () => {
           href="https://github.com/lipearaujo?tab=repositories"
           className="btn"
         >
-          Ver Todos os Projetos
+          Repositórios no github
         </a>
       </div>
     </section>

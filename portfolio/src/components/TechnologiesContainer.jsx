@@ -14,14 +14,14 @@ import {
 import "../styles/components/technologiescontainer.sass";
 
 const technologies = [
-  { id: "html", name: "HTML5", icon: <DiHtml5 /> },
-  { id: "css", name: "CSS3", icon: <DiCss3 /> },
-  { id: "js", name: "JavaScript", icon: <DiJsBadge /> },
-  { id: "node", name: "Node.js", icon: <DiNodejsSmall /> },
-  { id: "mysql", name: "MySQL", icon: <DiMysql /> },
-  { id: "react", name: "React", icon: <DiReact /> },
-  { id: "php", name: "PHP", icon: <DiPhp /> },
-  { id: "nextjs", name: "NextJS", icon: <TbBrandNextjs /> },
+  { id: "html", name: "HTML5", info: "", icon: <DiHtml5 /> },
+  { id: "css", name: "CSS3", info: "", icon: <DiCss3 /> },
+  { id: "js", name: "JavaScript", info: "", icon: <DiJsBadge /> },
+  { id: "node", name: "Node.js", info: "", icon: <DiNodejsSmall /> },
+  { id: "mysql", name: "MySQL", info: "", icon: <DiMysql /> },
+  { id: "react", name: "React", info: "", icon: <DiReact /> },
+  { id: "php", name: "PHP", info: "", icon: <DiPhp /> },
+  { id: "nextjs", name: "NextJS", info: "", icon: <TbBrandNextjs /> },
 ];
 
 const TechnologiesContainer = () => {
@@ -34,6 +34,7 @@ const TechnologiesContainer = () => {
             {tech.icon}
             <div className="technology__info">
               <h3>{tech.name}</h3>
+              <p>{tech.info}</p>
             </div>
           </div>
         ))}

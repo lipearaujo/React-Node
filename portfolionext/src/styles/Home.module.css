@@ -1,0 +1,384 @@
+.container {
+  width: 1280px;
+  margin: 0 auto;
+  padding: 0 2%; 
+}
+
+/* ---- Header section ----- */
+.header,
+.black {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  width: 100%;
+  height: 65px;
+  border-bottom: 1px solid #fff;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: all ease 0.5s;
+}
+
+.active {
+  border-bottom: 5px solid red;
+}
+
+.black {
+  background-color: #141414;
+}
+
+.header a {
+  width: 150px;
+  text-align: center;
+  padding: 8px 12px;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.header > a:hover {
+  transition: all ease-in-out 0.4s;
+  color: #111;
+  background-color: #fff;
+}
+
+/* ---- Hero section ----- */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.hero__img__avatar {
+  border-radius: 50%;
+}
+
+.hero__text {
+  width: 60%;
+  text-align: center;
+}
+
+.hero__text h2 {
+  color: #fff;
+  letter-spacing: 5px;
+  font-size: 1.5rem;
+}
+
+.hero__text h1 {
+  color: #fff;
+  font-size: 3rem;
+}
+
+.hero__socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 10px;
+}
+
+.hero__socials__btn {
+  background-color: #1d1d1d;
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 0.6rem;
+  line-height: 0.6rem;
+  font-size: 2.5rem;
+}
+
+.hero__socials__btn:hover {
+  transition: all ease-in-out 0.4s;
+  background-color: #ccc;
+}
+
+#linkedin {
+  color: #0072b1;
+}
+
+#github {
+  color: #111;
+}
+
+#instagram {
+  color: #bc2a8d;
+}
+
+/* ----- About section ----- */
+.about {
+  height: 100vh;
+  color: #fff;
+}
+
+.about h2 {
+  text-transform: uppercase;
+  letter-spacing: 20px;
+  font-size: 1.5rem;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.about__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0;
+}
+
+.about__container__text {
+  letter-spacing: 2px;
+  line-height: 35px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.about__container__btn {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  width: 250px;
+  border-radius: 15px;
+  padding: 1rem;
+  font-size: 1rem;
+  line-height: 1rem;
+  text-decoration: none;
+  background-color: #fff;
+  border: 1px solid #fff;
+  color: #000;
+}
+
+.about__container__btn:hover {
+  background: transparent;
+  color: #fff;
+  transition: all ease-in-out 0.3s;
+}
+
+/* ---- Skills ---- */
+.skills {
+  width: 100%;
+  height: 100vh;
+  color: #fff;
+}
+
+.skills h2 {
+  text-transform: uppercase;
+  letter-spacing: 20px;
+  font-size: 1.5rem;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.skills h3 {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 15px;
+  color: #999;
+}
+
+.skills__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0;
+}
+
+.skills__techs {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ---- Skill ---- */
+.skill__card {
+  width: 120px;
+  height: 120px;
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  border: 1px solid #fff;
+  font-size: 4.5rem;
+  line-height: 4rem;
+  background-color: #1d1d1d;
+}
+
+.skill__prof {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+  position: relative;
+  left: -130px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.skill__prof:hover {
+  color: #000;
+  transition: all ease-in-out 0.3s;
+  opacity: 0.8;
+  background-color: #fff;
+}
+
+/* ---- Projects ---- */
+.projects {
+  width: 100%;
+  height: 100vh;
+  color: #fff;
+}
+
+.projects h2 {
+  text-transform: uppercase;
+  letter-spacing: 20px;
+  font-size: 1.5rem;
+  text-align: center;
+  padding-top: 100px;
+}
+
+/* ---- Contact ---- */
+.contact {
+  width: 100%;
+  height: 100vh;
+  color: #fff;
+}
+
+.contact h2 {
+  text-transform: uppercase;
+  letter-spacing: 20px;
+  font-size: 1.5rem;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.contact h3 {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 15px;
+  color: #999;
+}
+
+.contact__form {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact__form__input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.contact__input {
+  width: 25%;
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  border: 0;
+  background-color: #333;
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.contact__subject,
+.contact__textarea {
+  width: 51%;
+  padding: 10px;
+  font-size: 1.1rem;
+  outline: none;
+  border-radius: 5px;
+  border: 0;
+  background-color: #333;
+  color: #fff;
+}
+
+.contact__textarea {
+  height: 150px;
+  resize: none;
+}
+
+.contact__btn {
+  width: 51%;
+  height: 60px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: rgb(16, 216, 16);
+}
+
+.contact__btn:hover {
+  transition: all ease-in-out 0.3s;
+  background-color: rgb(9, 112, 9);
+}
+
+.contact__infos {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.contact__info__card {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+}
+
+.contact__info__card h3 {
+  font-size: 0.9rem;
+  color: #7e7e7e;
+}
+
+.contact__info__card p {
+  font-weight: bold;
+  color: #fff;
+}
+
+.contact__info__card > svg {
+  padding: 0.4rem;
+  width: 2rem;
+  height: 2rem;
+  background-color: #1d1d1d;
+  border-radius: 5px;
+  border: 1px solid #333;
+}
+
+#phone__icon {
+  color: #e93b81;
+}
+
+#email__icon {
+  color: #6ab5b9;
+}
+
+#pin__icon {
+  color: #c17ceb;
+}
