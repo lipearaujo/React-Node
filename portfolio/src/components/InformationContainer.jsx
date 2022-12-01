@@ -1,6 +1,6 @@
-import React from 'react'
+import React from "react";
 import { AiFillPhone, AiOutlineMail, AiFillEnvironment } from "react-icons/ai";
-import '../styles/components/informationcontainer.sass'
+import "../styles/components/informationcontainer.sass";
 
 const InformationContainer = () => {
   return (
@@ -9,7 +9,7 @@ const InformationContainer = () => {
         <AiFillPhone id="phone__icon" />
         <div>
           <h3>Telefone</h3>
-          <p>(67)99977-3545</p>
+          <p>(67)0000-0000</p>
         </div>
       </div>
       <div className="info__card">
@@ -30,4 +30,4 @@ const InformationContainer = () => {
   );
 };
 
-export default InformationContainer
+export default InformationContainer;
