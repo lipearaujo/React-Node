@@ -11,17 +11,18 @@ const Home = () => {
 
   const loadUser = async (username: string) => {
     setError(false);
-    setUser(null)
+    setUser(null);
 
     const res = await fetch(`https://api.github.com/users/${username}`);
     const data = await res.json();
 
-    if(res.status === 404) {
+    if (res.status === 404) {
       setError(true);
       return;
     }
 
     const { avatar_url, login, location, followers, following } = data;
+
     const userData: UserProps = {
       avatar_url,
       login,
@@ -36,7 +37,7 @@ const Home = () => {
   return (
     <div>
       <Search loadUser={loadUser} />
-      {user && <User {...user}/>}
+      {user && <User {...user} />}
       {error && <Error />}
     </div>
   );
